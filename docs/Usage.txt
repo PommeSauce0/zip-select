@@ -1,31 +1,15 @@
-ZIP Select 1.0.1
+ZIP Select
 
 Windows: open ZIP-Select.exe.
-Linux (experimental, not tested on a Linux desktop): run ./ZIP-Select.
-If needed, run chmod +x ZIP-Select first.
-Linux requires glibc, X11 or XWayland, Fontconfig and desktop graphics libraries.
-Packages include .NET; no SDK is needed.
+Linux (experimental): chmod +x ZIP-Select, then ./ZIP-Select.
+Linux requires glibc, X11/XWayland and the usual desktop graphics libraries.
 
-Choose Langue > English to switch languages. Your choice is saved.
-Language changes are available when no extraction is running.
-Existing log entries keep their original language.
+Choose source and destination folders, enter extensions (.mp3, .pdf)
+or * to extract everything, then click Extract.
+Options controls subfolders, file organization and conflict renaming.
+Choose Langue > English to switch languages.
 
-1. Choose the folder containing ZIP archives.
-2. Choose the extraction folder.
-3. Enter file extensions (.mp3, .pdf), or * for all files.
-4. Adjust Options, then click Extract.
+No overwrites. Same destination and size: skipped without comparing contents.
+ZIP archives and completed files are kept when stopping extraction.
 
-Options control recursive ZIP search, folders inside archives, keeping or
-flattening folders, a folder per ZIP, and renaming conflicting files.
-The example illustrates settings; it is not a preview of actual archives.
-
-Archives are kept. Existing files are never overwritten.
-Same destination and size: skipped without comparing contents.
-Conflicts can be reported or renamed, e.g. file (2).mp3.
-Stopping keeps completed files. Start again to resume.
-
-View controls the light/dark theme. File lets you open the extraction folder
-and save the log. System error details may remain in the system language.
-
-The project logo was generated with AI using OpenAI image_gen.
-The source code includes its prompt and provenance.
+Code, help and logo provenance: https://github.com/PommeSauce0/zip-select

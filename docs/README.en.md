@@ -1,42 +1,34 @@
 # ZIP Select
 
-[Français](../README.md)
+[Français](../README.md) · [Downloads](https://github.com/PommeSauce0/zip-select/releases)
 
-Extract selected file types from multiple ZIP archives, with a graphical interface for Windows and Linux x64.
+Extract selected file types from multiple ZIP archives. Available in French and English, with light and dark themes.
 
-**Windows has been tested. Linux is experimental: its package builds, but has not been tested on a Linux desktop.** macOS is not supported.
+![ZIP Select](interface-english.png)
 
-![English interface](interface-english.png)
+## Usage
 
-## Get started
+On Windows, unpack the download and open `ZIP-Select.exe`. No SDK required.
 
-Download a package from the repository’s GitHub Releases and unpack it. On Windows, open `ZIP-Select.exe`. On Linux, run `./ZIP-Select`, using `chmod +x ZIP-Select` if needed. The Linux build targets glibc distributions with X11 or XWayland, Fontconfig and the usual desktop graphics libraries. Alpine/musl is not targeted. Packages include .NET; no SDK is needed to run them.
+1. Choose your ZIP archive folder and extraction folder.
+2. Enter extensions (`.mp3, .pdf`) or `*` to extract everything.
+3. Adjust the options, then click **Extract**.
 
-Choose **Langue → English** to switch to English. The choice is saved and takes effect immediately, without restarting. Language changes are disabled during extraction. Previous log entries keep their original language; operating system error details and native dialogs may use the system language.
+Options let you search subfolders, keep internal folders, create a folder per ZIP and rename conflicts. Choose **Langue → English** to switch languages.
 
-1. Select the folder containing your ZIP archives.
-2. Select an extraction folder.
-3. Enter extensions such as `.mp3, .pdf`, or `*` for all files.
-4. Adjust **Options**, then click **Extract**.
+Existing files are never overwritten. Same destination and size: skipped without comparing contents. ZIP archives are kept.
 
-Options control recursive ZIP search, inclusion of folders inside archives, keeping or flattening their structure, a separate destination folder for each archive, and automatic conflict renaming. The example illustrates your settings; it is not a preview of the actual archives.
+**Windows x64 tested. Linux x64 experimental, not tested on a Linux desktop.** On Linux: `chmod +x ZIP-Select`, then `./ZIP-Select`; glibc and an X11/XWayland desktop are required.
 
-Archives are kept, and existing files are never overwritten. A matching destination and file size cause a file to be skipped, **without comparing contents**. Stopping keeps completed files; starting again resumes using these rules. Folders without selected files are not created.
+## Build
 
-## Development
+With the .NET 10 SDK and PowerShell, from the repository root:
 
-Install the .NET 10 SDK. From the repository root:
-
-```sh
-dotnet restore tests/ZipSelect.Tests.csproj --configfile NuGet.Config
-dotnet run --project tests/ZipSelect.Tests.csproj --no-restore
-dotnet run --project src/Desktop/ZipSelect.Desktop.csproj
+```powershell
+./scripts/Build.ps1 -Action Test
+./scripts/Package.ps1 -Runtime win-x64
 ```
 
-With PowerShell, `./scripts/Build.ps1 -Action Test` runs the tests. `./scripts/Package.ps1 -Runtime win-x64` or `-Runtime linux-x64` creates packages under `dist/packages/`.
+The package is created in `dist/packages/`. Use `linux-x64` for Linux.
 
-`src/Core/` contains extraction and the shared `Translations.json` catalog; `src/Desktop/` contains the Avalonia UI. Tests cover extraction in both languages, live language switching, settings persistence and the headless UI. Native desktop integration still needs manual testing on each platform.
-
-Settings remain in `ZipSelect-Avalonia/settings.json` under .NET’s `LocalApplicationData` folder for compatibility with version 1.0.0. Build outputs, local tools and backups are excluded from Git.
-
-The [project logo](../assets/branding/logo.png) was **generated with AI using OpenAI image_gen**. Its [prompt and provenance](../assets/branding/Generation.md) are preserved, along with attribution in the source. The logo is displayed in the application and embedded as its icon. `logo.ico` is a multi-resolution conversion of the original PNG for Windows.
+[Changelog](../CHANGELOG.md) · [Logo generated with AI using OpenAI image_gen](../assets/branding/Generation.md)
