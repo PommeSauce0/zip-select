@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><Nullable>disable</Nullable></PropertyGroup>
+  <ItemGroup><EmbeddedResource Include="Translations.json" LogicalName="ZipSelect.Translations.json" /></ItemGroup>
+</Project>

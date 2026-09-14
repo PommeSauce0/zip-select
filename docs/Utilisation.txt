@@ -1,0 +1,34 @@
+ZIP Select
+
+Langue → Français / English : changement immédiat, choix mémorisé.
+Le changement de langue est désactivé pendant une extraction.
+Les journaux précédents restent dans leur langue d’origine.
+
+Windows : ouvrir ZIP-Select.exe.
+Linux (expérimental, non testé sur un bureau Linux) : lancer ./ZIP-Select.
+Si nécessaire : chmod +x ZIP-Select.
+Linux nécessite glibc, un bureau X11 ou XWayland, Fontconfig et les bibliothèques graphiques usuelles.
+Les paquets incluent .NET ; aucun SDK n’est requis.
+
+1. Choisir le dossier contenant les archives ZIP.
+2. Choisir le dossier d’extraction.
+3. Saisir les extensions (.mp3, .pdf) ou * pour tous les fichiers.
+4. Ajuster les réglages dans Options, puis cliquer sur Extraire.
+
+Les options permettent de rechercher les ZIP dans les sous-dossiers,
+d’inclure les sous-dossiers internes des ZIP, de conserver les dossiers ou
+de regrouper les fichiers, de créer un dossier par ZIP et de renommer les conflits.
+L’exemple affiché illustre les réglages ; il n’analyse pas les archives à l’avance.
+
+Les archives sont conservées. Aucun fichier existant n’est écrasé.
+Même destination et même taille : fichier ignoré, sans comparaison du contenu.
+Un conflit peut être signalé ou renommé, par exemple fichier (2).mp3.
+Arrêter conserve les fichiers terminés. Relancer permet de reprendre.
+
+Le menu Affichage permet de choisir le thème clair ou sombre.
+Le menu Fichier permet d’ouvrir la destination ou d’enregistrer le journal.
+Les préférences sont conservées dans ZipSelect-Avalonia/settings.json,
+dans le dossier local des données utilisateur.
+
+Le logo du projet est généré par IA avec OpenAI image_gen.
+Le code source conserve son prompt et sa provenance.

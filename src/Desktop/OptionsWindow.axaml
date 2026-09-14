@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ZipSelect.Desktop.OptionsWindow" Title="{DynamicResource ExtractionOptions}" Width="740" Height="860" MinWidth="620" MinHeight="560" WindowStartupLocation="CenterOwner">
+  <DockPanel Margin="24">
+    <StackPanel DockPanel.Dock="Top" Spacing="5" Margin="0,0,0,18"><TextBlock Text="{DynamicResource HowShouldYourFilesBeOrganized}" FontSize="22" FontWeight="SemiBold"/><TextBlock Classes="muted" Text="{DynamicResource ChooseTheResultYouWantTheExample}" TextWrapping="Wrap"/></StackPanel>
+    <Grid DockPanel.Dock="Bottom" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8" Margin="0,18,0,0"><Button Name="Reset" Content="{DynamicResource RestoreDefaults}" HorizontalAlignment="Left"/><Button Name="CancelOptions" Grid.Column="1" Content="{DynamicResource Cancel}"/><Button Name="SaveOptions" Grid.Column="2" Classes="primary" Content="{DynamicResource Save}"/></Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel Spacing="12" Margin="0,0,8,0">
+      <Border Classes="card"><StackPanel Spacing="8">
+        <TextBlock Text="{DynamicResource WhereShouldEachZipSContentsGo}" FontWeight="SemiBold" TextWrapping="Wrap"/>
+        <RadioButton Name="Together" GroupName="ArchiveFolder" Content="{DynamicResource InTheSameDestinationFolder}"/>
+        <RadioButton Name="PerZip" GroupName="ArchiveFolder" Content="{DynamicResource InASeparateFolderForEachZip}"/>
+        <TextBlock Classes="muted" FontSize="12" Text="{DynamicResource MusicZipMusicFolderPhotosZipPhotos}" TextWrapping="Wrap"/>
+      </StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="8">
+        <TextBlock Text="{DynamicResource KeepTheFoldersInsideTheZipFiles}" FontWeight="SemiBold" TextWrapping="Wrap"/>
+        <RadioButton Name="KeepFolders" GroupName="Folders" Content="{DynamicResource YesKeepTheFolders}"/>
+        <RadioButton Name="FilesOnly" GroupName="Folders" Content="{DynamicResource NoExtractTheFilesWithoutTheirFolders}"/>
+        <TextBlock Classes="muted" FontSize="12" Text="{DynamicResource WithoutFoldersAlbumHelloMpBecomesHello}" TextWrapping="Wrap"/>
+      </StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="8">
+        <TextBlock Text="{DynamicResource WhatIfAFileWithTheSame}" FontWeight="SemiBold" TextWrapping="Wrap"/>
+        <RadioButton Name="SkipExisting" GroupName="Conflict" Content="{DynamicResource KeepTheExistingFileAndReportThe}"/>
+        <RadioButton Name="RenameExisting" GroupName="Conflict" Content="{DynamicResource KeepBothByRenamingTheNewFile}"/>
+        <TextBlock Classes="muted" FontSize="12" Text="{DynamicResource HelloMpHelloMpSameDestinationAnd}" TextWrapping="Wrap"/>
+      </StackPanel></Border>
+      <Border Classes="card"><StackPanel Spacing="8"><TextBlock Text="{DynamicResource ExampleResultIllustration}" FontWeight="SemiBold"/><TextBlock Name="Example" FontFamily="monospace" FontSize="12" TextWrapping="Wrap"/></StackPanel></Border>
+      <Expander Header="{DynamicResource FileSearchAdvancedSettings}" HorizontalAlignment="Stretch"><StackPanel Spacing="10">
+        <CheckBox Name="DeepSearch"><TextBlock Text="{DynamicResource AlsoSearchForZipFilesInSource}" TextWrapping="Wrap"/></CheckBox>
+        <CheckBox Name="DeepContents"><TextBlock Text="{DynamicResource AlsoExtractFilesStoredInFoldersInside}" TextWrapping="Wrap"/></CheckBox>
+        <TextBlock Classes="muted" Text="{DynamicResource UncheckTheSecondOptionToExtractOnly}" FontSize="12" TextWrapping="Wrap"/>
+      </StackPanel></Expander>
+    </StackPanel></ScrollViewer>
+  </DockPanel>
+</Window>

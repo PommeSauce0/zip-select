@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="ZipSelect.Desktop.App" RequestedThemeVariant="Light">
+  <Application.Styles>
+    <FluentTheme />
+    <Style Selector="Window"><Setter Property="Icon" Value="avares://ZIP-Select/Assets/logo.ico"/><Setter Property="FontFamily" Value="Inter"/><Setter Property="FontSize" Value="13"/><Setter Property="Background" Value="{DynamicResource Page}"/></Style>
+    <Style Selector="Button"><Setter Property="CornerRadius" Value="6"/><Setter Property="Padding" Value="14,8"/></Style>
+    <Style Selector="Button.primary"><Setter Property="Background" Value="#4864BB"/><Setter Property="Foreground" Value="White"/></Style>
+    <Style Selector="TextBox"><Setter Property="CornerRadius" Value="5"/><Setter Property="Padding" Value="10,8"/></Style>
+    <Style Selector="TextBlock.muted"><Setter Property="Foreground" Value="{DynamicResource Muted}"/></Style>
+    <Style Selector="Border.card"><Setter Property="Background" Value="{DynamicResource Panel}"/><Setter Property="BorderBrush" Value="{DynamicResource Line}"/><Setter Property="BorderThickness" Value="1"/><Setter Property="CornerRadius" Value="9"/><Setter Property="Padding" Value="18"/></Style>
+  </Application.Styles>
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light"><SolidColorBrush x:Key="Page">#F3F5F9</SolidColorBrush><SolidColorBrush x:Key="Panel">#FFFFFF</SolidColorBrush><SolidColorBrush x:Key="Line">#DCE3ED</SolidColorBrush><SolidColorBrush x:Key="Muted">#69768A</SolidColorBrush></ResourceDictionary>
+        <ResourceDictionary x:Key="Dark"><SolidColorBrush x:Key="Page">#1D2027</SolidColorBrush><SolidColorBrush x:Key="Panel">#262B34</SolidColorBrush><SolidColorBrush x:Key="Line">#3A4352</SolidColorBrush><SolidColorBrush x:Key="Muted">#ACB6C8</SolidColorBrush></ResourceDictionary>
+      </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
