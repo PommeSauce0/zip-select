@@ -1,0 +1,19 @@
+# Generated files and local history
+/dist/
+/artifacts/
+/.local-history/
+/.tools/
+/.backups/
+*.exe
+*.dll
+*.pdb
+*.tmp
+bin/
+obj/
+.vs/
+.DS_Store
+Thumbs.db
+# Extracted files and archives do not belong in the repository
+*.zip
+.env
+.env.*

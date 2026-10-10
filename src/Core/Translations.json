@@ -1,0 +1,434 @@
+{
+  "File": {
+    "fr": "Fichier",
+    "en": "File"
+  },
+  "ChooseZipArchiveFolder": {
+    "fr": "Choisir le dossier des archives ZIP…",
+    "en": "Choose ZIP archive folder…"
+  },
+  "ChooseExtractionFolder": {
+    "fr": "Choisir le dossier d’extraction…",
+    "en": "Choose extraction folder…"
+  },
+  "OpenExtractionFolder": {
+    "fr": "Ouvrir le dossier d’extraction",
+    "en": "Open extraction folder"
+  },
+  "SaveLog": {
+    "fr": "Enregistrer le journal…",
+    "en": "Save log…"
+  },
+  "Exit": {
+    "fr": "Quitter",
+    "en": "Exit"
+  },
+  "View": {
+    "fr": "Affichage",
+    "en": "View"
+  },
+  "Theme": {
+    "fr": "Thème",
+    "en": "Theme"
+  },
+  "Light": {
+    "fr": "Clair",
+    "en": "Light"
+  },
+  "Dark": {
+    "fr": "Sombre",
+    "en": "Dark"
+  },
+  "ClearLog": {
+    "fr": "Effacer le journal",
+    "en": "Clear log"
+  },
+  "Options": {
+    "fr": "Options",
+    "en": "Options"
+  },
+  "ConfigureExtraction": {
+    "fr": "Configurer l’extraction…",
+    "en": "Configure extraction…"
+  },
+  "Help": {
+    "fr": "Aide",
+    "en": "Help"
+  },
+  "HowDoesItWork": {
+    "fr": "Comment ça marche ?",
+    "en": "How does it work?"
+  },
+  "About": {
+    "fr": "À propos",
+    "en": "About"
+  },
+  "FooterNote": {
+    "fr": "Fichier identique déjà présent : ignoré · ZIP conservés",
+    "en": "Identical file already present: skipped · ZIP files kept"
+  },
+  "ExtractYourFiles": {
+    "fr": "Extraire vos fichiers",
+    "en": "Extract your files"
+  },
+  "Subtitle": {
+    "fr": "Choisissez les extensions à extraire et la façon de ranger vos fichiers.",
+    "en": "Choose the file extensions to extract and how to organize your files."
+  },
+  "ZipArchiveFolder": {
+    "fr": "Dossier des archives ZIP",
+    "en": "ZIP archive folder"
+  },
+  "Browse": {
+    "fr": "Parcourir…",
+    "en": "Browse…"
+  },
+  "ExtractionFolder": {
+    "fr": "Dossier d’extraction",
+    "en": "Extraction folder"
+  },
+  "FileExtensions": {
+    "fr": "Extensions à extraire",
+    "en": "File extensions"
+  },
+  "ExtensionsHint": {
+    "fr": "Séparez par des virgules · * pour tous les fichiers",
+    "en": "Separate with commas · * for all files"
+  },
+  "ExtractionLog": {
+    "fr": "Suivi de l’extraction",
+    "en": "Extraction log"
+  },
+  "Welcome": {
+    "fr": "Choisissez vos dossiers et extensions pour commencer.",
+    "en": "Choose your folders and file extensions to get started."
+  },
+  "Ready": {
+    "fr": "Prêt",
+    "en": "Ready"
+  },
+  "Stop": {
+    "fr": "Arrêter",
+    "en": "Stop"
+  },
+  "Extract": {
+    "fr": "Extraire",
+    "en": "Extract"
+  },
+  "ExtractionOptions": {
+    "fr": "Options d’extraction",
+    "en": "Extraction options"
+  },
+  "OptionsTitle": {
+    "fr": "Comment ranger vos fichiers ?",
+    "en": "How should your files be organized?"
+  },
+  "OptionsSubtitle": {
+    "fr": "Choisissez le résultat souhaité. L’exemple se met à jour en dessous.",
+    "en": "Choose the result you want. The example below updates as you go."
+  },
+  "RestoreDefaults": {
+    "fr": "Réglages par défaut",
+    "en": "Restore defaults"
+  },
+  "Cancel": {
+    "fr": "Annuler",
+    "en": "Cancel"
+  },
+  "Save": {
+    "fr": "Enregistrer",
+    "en": "Save"
+  },
+  "DestinationQuestion": {
+    "fr": "1. Où placer le contenu de chaque ZIP ?",
+    "en": "1. Where should each ZIP’s contents go?"
+  },
+  "SameFolderChoice": {
+    "fr": "Dans le même dossier de destination",
+    "en": "In the same destination folder"
+  },
+  "FolderPerZipChoice": {
+    "fr": "Dans un dossier séparé pour chaque ZIP",
+    "en": "In a separate folder for each ZIP"
+  },
+  "FolderPerZipHint": {
+    "fr": "musique.zip → dossier musique ; cours/photos.zip → dossier cours/photos.",
+    "en": "music.zip → music folder; trips/photos.zip → trips/photos folder."
+  },
+  "FoldersQuestion": {
+    "fr": "2. Garder les dossiers qui sont à l’intérieur des ZIP ?",
+    "en": "2. Keep the folders inside the ZIP files?"
+  },
+  "KeepFoldersChoice": {
+    "fr": "Oui, garder les dossiers",
+    "en": "Yes, keep the folders"
+  },
+  "FilesOnlyChoice": {
+    "fr": "Non, récupérer les fichiers sans leurs dossiers",
+    "en": "No, extract the files without their folders"
+  },
+  "FilesOnlyHint": {
+    "fr": "Sans les dossiers : album/bonjour.mp3 devient bonjour.mp3.",
+    "en": "Without folders: album/hello.mp3 becomes hello.mp3."
+  },
+  "ConflictQuestion": {
+    "fr": "3. Si un fichier de même nom existe déjà ?",
+    "en": "3. What if a file with the same name already exists?"
+  },
+  "ReportConflictChoice": {
+    "fr": "Le laisser en place et signaler le conflit",
+    "en": "Keep the existing file and report the conflict"
+  },
+  "RenameConflictChoice": {
+    "fr": "Conserver les deux en renommant le nouveau",
+    "en": "Keep both by renaming the new file"
+  },
+  "ConflictHint": {
+    "fr": "bonjour.mp3 → bonjour (2).mp3. Fichier identique déjà présent : ignoré dans les deux cas.",
+    "en": "hello.mp3 → hello (2).mp3. Identical file already present: skipped in either case."
+  },
+  "ExampleTitle": {
+    "fr": "Exemple de résultat (illustration)",
+    "en": "Example result (illustration)"
+  },
+  "AdvancedSettings": {
+    "fr": "Recherche des fichiers — réglages avancés",
+    "en": "File search — advanced settings"
+  },
+  "SearchSubfoldersChoice": {
+    "fr": "Chercher aussi les ZIP dans les sous-dossiers du dossier source",
+    "en": "Also search for ZIP files in source subfolders"
+  },
+  "ArchiveSubfoldersChoice": {
+    "fr": "Prendre aussi les fichiers rangés dans des dossiers à l’intérieur des ZIP",
+    "en": "Also extract files stored in folders inside the ZIP files"
+  },
+  "AdvancedHint": {
+    "fr": "Décochez le second choix pour extraire seulement la racine des ZIP.",
+    "en": "Uncheck the second option to extract only files at the root of ZIP files."
+  },
+  "Stopping": {
+    "fr": "Arrêt en cours…",
+    "en": "Stopping…"
+  },
+  "FolderNotCreatedYet": {
+    "fr": "Ce dossier sera créé lors de l’extraction.",
+    "en": "This folder will be created during extraction."
+  },
+  "SaveLogTitle": {
+    "fr": "Enregistrer le journal",
+    "en": "Save log"
+  },
+  "UserGuide": {
+    "fr": "Mode d’emploi",
+    "en": "User guide"
+  },
+  "StoppingBeforeClose": {
+    "fr": "Arrêt en cours. Vous pourrez ensuite fermer la fenêtre.",
+    "en": "Stopping. You can close the window once extraction has stopped."
+  },
+  "DarkTheme": {
+    "fr": "Thème sombre",
+    "en": "Dark theme"
+  },
+  "LightTheme": {
+    "fr": "Thème clair",
+    "en": "Light theme"
+  },
+  "CouldNotSavePreferences": {
+    "fr": "Préférences non enregistrées : ",
+    "en": "Could not save preferences: "
+  },
+  "RecursiveSearch": {
+    "fr": "Recherche récursive",
+    "en": "Recursive search"
+  },
+  "SourceFolderOnly": {
+    "fr": "Dossier source seul",
+    "en": "Source folder only"
+  },
+  "EntireZip": {
+    "fr": "Tout le ZIP",
+    "en": "Entire ZIP"
+  },
+  "ZipRootOnly": {
+    "fr": "Racine du ZIP",
+    "en": "ZIP root only"
+  },
+  "KeepFolders": {
+    "fr": "Dossiers conservés",
+    "en": "Keep folders"
+  },
+  "FilesOnly": {
+    "fr": "Fichiers seuls",
+    "en": "Files only"
+  },
+  "OneFolderPerZip": {
+    "fr": "Un dossier par ZIP",
+    "en": "One folder per ZIP"
+  },
+  "SharedDestination": {
+    "fr": "Destination commune",
+    "en": "Shared destination"
+  },
+  "RenameConflicts": {
+    "fr": "Conflits renommés",
+    "en": "Rename conflicts"
+  },
+  "ReportConflicts": {
+    "fr": "Conflits signalés",
+    "en": "Report conflicts"
+  },
+  "ChooseAFolder": {
+    "fr": "Choisir un dossier",
+    "en": "Choose a folder"
+  },
+  "MissingFolders": {
+    "fr": "Choisissez un dossier source existant et une destination.",
+    "en": "Choose an existing source folder and a destination."
+  },
+  "ExtractionStopped": {
+    "fr": "Extraction arrêtée",
+    "en": "Extraction stopped"
+  },
+  "ResumeHint": {
+    "fr": "Les fichiers terminés sont conservés. Relancez pour reprendre.",
+    "en": "Completed files have been kept. Start again to resume."
+  },
+  "ExtractionInterrupted": {
+    "fr": "Extraction interrompue",
+    "en": "Extraction interrupted"
+  },
+  "Error": {
+    "fr": "[ERREUR] ",
+    "en": "[ERROR] "
+  },
+  "Close": {
+    "fr": "Fermer",
+    "en": "Close"
+  },
+  "InvalidExtension": {
+    "fr": "Extension invalide : ",
+    "en": "Invalid extension: "
+  },
+  "ExtensionExample": {
+    "fr": ". Exemple : .mp3, .pdf, .jpg ; * pour tout extraire.",
+    "en": ". Example: .mp3, .pdf, .jpg; * to extract all files."
+  },
+  "NoExtension": {
+    "fr": "Indiquez au moins une extension, ou * pour tous les fichiers.",
+    "en": "Enter at least one extension, or * for all files."
+  },
+  "AbsolutePath": {
+    "fr": "Chemin absolu interdit dans le ZIP.",
+    "en": "Absolute paths are not allowed inside ZIP files."
+  },
+  "InvalidPath": {
+    "fr": "Chemin invalide dans le ZIP.",
+    "en": "Invalid path inside ZIP file."
+  },
+  "AmbiguousName": {
+    "fr": "Nom ambigu sous Windows.",
+    "en": "Ambiguous file name on Windows."
+  },
+  "ReservedName": {
+    "fr": "Nom de fichier réservé par Windows.",
+    "en": "File name reserved by Windows."
+  },
+  "OutsideDestination": {
+    "fr": "Chemin en dehors du dossier d’extraction.",
+    "en": "Path outside the extraction folder."
+  },
+  "LinkInDestination": {
+    "fr": "Un lien symbolique ou une jonction se trouve dans la destination.",
+    "en": "The destination contains a symbolic link or junction."
+  },
+  "SearchingForArchives": {
+    "fr": "Recherche des archives…",
+    "en": "Searching for archives…"
+  },
+  "SourceNotFound": {
+    "fr": "Le dossier source est introuvable.",
+    "en": "The source folder could not be found."
+  },
+  "Access": {
+    "fr": "[ACCÈS] ",
+    "en": "[ACCESS] "
+  },
+  "Reading": {
+    "fr": "Lecture de ",
+    "en": "Reading "
+  },
+  "AlreadyPresent": {
+    "fr": "[DÉJÀ PRÉSENT] ",
+    "en": "[ALREADY PRESENT] "
+  },
+  "Conflict": {
+    "fr": "[CONFLIT] ",
+    "en": "[CONFLICT] "
+  },
+  "ConflictDetails": {
+    "fr": " — contenu différent ou dossier existant. ZIP : ",
+    "en": " — different contents or existing folder. ZIP: "
+  },
+  "Extracting": {
+    "fr": "Extraction de ",
+    "en": "Extracting "
+  },
+  "SizeMismatch": {
+    "fr": "Taille extraite différente de celle annoncée par le ZIP.",
+    "en": "Extracted size differs from the size recorded in the ZIP."
+  },
+  "Extracted": {
+    "fr": "[EXTRAIT] ",
+    "en": "[EXTRACTED] "
+  },
+  "ExtractedAndRenamed": {
+    "fr": "[EXTRAIT ET RENOMMÉ] ",
+    "en": "[EXTRACTED AND RENAMED] "
+  },
+  "UnreadableZip": {
+    "fr": "[ZIP ILLISIBLE] ",
+    "en": "[UNREADABLE ZIP] "
+  },
+  "NoZipArchivesFound": {
+    "fr": "Aucune archive ZIP trouvée",
+    "en": "No ZIP archives found"
+  },
+  "ExtractionComplete": {
+    "fr": "Extraction terminée",
+    "en": "Extraction complete"
+  },
+  "Summary": {
+    "fr": "Bilan : {0} extrait(s) dont {3} renommé(s), {1} déjà présent(s), {2} point(s) à vérifier.",
+    "en": "Summary: {0} extracted, including {3} renamed; {1} already present; {2} to review."
+  },
+  "Language": {
+    "fr": "Langue",
+    "en": "Language"
+  },
+  "HelpText": {
+    "fr": "1. Choisissez les dossiers source et destination.\n2. Saisissez les extensions (.mp3, .pdf), ou * pour tout extraire.\n3. Réglez l’organisation dans Options, puis cliquez sur Extraire.\n\nUn fichier déjà présent est ignoré s’il est identique (même taille et même CRC32). Aucun fichier n’est écrasé. Arrêter conserve les fichiers terminés.",
+    "en": "1. Choose the source and destination folders.\n2. Enter file extensions (.mp3, .pdf), or * to extract everything.\n3. Choose how to organize files in Options, then click Extract.\n\nAn existing file is skipped when it is identical (same size and CRC32). No files are overwritten. Stopping keeps completed files."
+  },
+  "AboutText": {
+    "fr": "ZIP Select {0}\nWindows · Linux expérimental\n\nLogo généré par IA avec OpenAI image_gen.",
+    "en": "ZIP Select {0}\nWindows · Experimental Linux support\n\nLogo generated with AI using OpenAI image_gen."
+  },
+  "CountersText": {
+    "fr": "{0} ZIP trouvés     {1} extraits     {2} déjà présents     {3} à vérifier",
+    "en": "{0} ZIPs found     {1} extracted     {2} already present     {3} to review"
+  },
+  "ExampleText": {
+    "fr": "musique.zip contient {0}bonjour.mp3\n→ Destination/{1}{2}bonjour.mp3",
+    "en": "music.zip contains {0}hello.mp3\n→ Destination/{1}{2}hello.mp3"
+  },
+  "ExampleFolder": {
+    "fr": "musique/",
+    "en": "music/"
+  },
+  "ChecksumMismatch": {
+    "fr": "Somme de contrôle CRC32 incorrecte : données corrompues.",
+    "en": "Incorrect CRC32 checksum: corrupted data."
+  }
+}

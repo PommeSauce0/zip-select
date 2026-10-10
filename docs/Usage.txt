@@ -1,0 +1,15 @@
+ZIP Select
+
+Windows: open ZIP-Select.exe.
+Linux (experimental): chmod +x ZIP-Select, then ./ZIP-Select.
+Linux requires glibc, X11/XWayland and the usual desktop graphics libraries.
+
+Choose source and destination folders, enter extensions (.mp3, .pdf)
+or * to extract everything, then click Extract.
+Options controls subfolders, file organization and conflict renaming.
+Choose Langue > English to switch languages.
+
+No overwrites. Identical file already present (same size and CRC32): skipped.
+ZIP archives and completed files are kept when stopping extraction.
+
+Code, help and logo provenance: https://github.com/PommeSauce0/zip-select
