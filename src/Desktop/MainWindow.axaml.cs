@@ -142,6 +142,8 @@ public partial class MainWindow : Window
         var pending = new ConcurrentQueue<Update>();
         var timer = new DispatcherTimer(TimeSpan.FromMilliseconds(100), DispatcherPriority.Background, (_, _) => Flush(pending));
         try {
+            // Let the window show the busy state before the engine starts, even for a run that finishes at once.
+            await Task.Yield();
             timer.Start();
             try { await Task.Run(() => Engine.Run(source, destination, extensions, options, cancellation.Token, pending.Enqueue)); }
             finally { timer.Stop(); Flush(pending); }
