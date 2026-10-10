@@ -72,6 +72,7 @@ jobs:
         with:
           subject-path: |
             dist/*.zip
+            dist/*.exe
             dist/*.tar.gz
       - name: Create draft release
         env:

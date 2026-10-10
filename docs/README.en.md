@@ -8,7 +8,7 @@ Extract selected file types from multiple ZIP archives. Available in French and 
 
 ## Usage
 
-On Windows, unpack the download and open `ZIP-Select.exe`. No SDK required.
+On Windows, download `ZIP-Select-<version>-win-x64.exe` and run it, or get the `.zip`, which also contains the usage notes. No SDK required. The executable is not signed, so Windows may show “Windows protected your PC”: click **More info → Run anyway**.
 
 1. Choose your ZIP archive folder and extraction folder.
 2. Enter extensions (`.mp3, .pdf`) or `*` to extract everything.

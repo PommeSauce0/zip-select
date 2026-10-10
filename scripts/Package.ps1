@@ -13,12 +13,19 @@ try {
     if ($Runtime -eq 'win-x64') {
         $package = "$releases/ZIP-Select-$version-$Runtime.zip"
         Compress-Archive -LiteralPath "$output/ZIP-Select.exe", "$output/Utilisation.txt", "$output/Usage.txt" -DestinationPath $package -Force
+        # The executable is also offered on its own for a direct download.
+        $executable = "$releases/ZIP-Select-$version-$Runtime.exe"
+        Copy-Item -LiteralPath "$output/ZIP-Select.exe" -Destination $executable -Force
+        $packages = $package, $executable
     } else {
         $package = "$releases/ZIP-Select-$version-$Runtime.tar.gz"
         & tar -czf $package -C $output ZIP-Select Utilisation.txt Usage.txt
         if ($LASTEXITCODE -ne 0) { throw 'Création du paquet Linux échouée.' }
+        $packages = @($package)
     }
-    $hash = (Get-FileHash -LiteralPath $package -Algorithm SHA256).Hash.ToLowerInvariant()
-    "$hash  $([IO.Path]::GetFileName($package))" | Set-Content -LiteralPath "$package.sha256" -Encoding ascii
-    Write-Host "Paquet prêt : $package"
+    foreach ($file in $packages) {
+        $hash = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+        "$hash  $([IO.Path]::GetFileName($file))" | Set-Content -LiteralPath "$file.sha256" -Encoding ascii
+        Write-Host "Paquet prêt : $file"
+    }
 } finally { Pop-Location }

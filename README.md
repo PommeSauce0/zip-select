@@ -8,7 +8,7 @@ Extrayez les fichiers de votre choix depuis plusieurs archives ZIP. Disponible e
 
 ## Utilisation
 
-Sur Windows, décompressez le téléchargement et lancez `ZIP-Select.exe`. Aucun SDK à installer.
+Sur Windows, téléchargez `ZIP-Select-<version>-win-x64.exe` et lancez-le, ou prenez le `.zip`, qui contient aussi la notice. Aucun SDK à installer. L’exécutable n’étant pas signé, Windows peut afficher « Windows a protégé votre ordinateur » : cliquez sur **Informations complémentaires → Exécuter quand même**.
 
 1. Choisissez le dossier des ZIP et le dossier d’extraction.
 2. Indiquez les extensions (`.mp3, .pdf`) ou `*` pour tout extraire.
